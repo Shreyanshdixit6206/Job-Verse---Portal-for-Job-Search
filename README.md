@@ -1,7 +1,7 @@
 # JobVerse - Modern Job Portal
 
 <p align="center">
-  <img src="[https://placehold.co/600x300/1a1a2e/9a34ff?text=JobVerse](https://github.com/Shreyanshdixit6206/JobVerse---Modern-Job-Portal/blob/main/Screenshot%202025-08-14%20015243.png)" alt="JobVerse Banner">
+  <img src="(https://github.com/Shreyanshdixit6206/JobVerse---Modern-Job-Portal/blob/main/Screenshot%202025-08-14%20015243.png)" alt="JobVerse Banner">
 </p>
 
 <p align="center">
