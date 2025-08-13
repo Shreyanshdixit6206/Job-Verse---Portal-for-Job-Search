@@ -19,7 +19,7 @@
 
 ## ✨ Live Demo
 
-[**You can view the live version of the project here.**](https://your-live-demo-link.com](https://job-verse-portal-for-job-search.vercel.app/)](https://job-verse-portal-for-job-search.vercel.app) 👈 *(Replace with your actual deployment link)*
+[**You can view the live version of the project here.**](https://job-verse-portal-for-job-search.vercel.app/)) 👈 *(Replace with your actual deployment link)*
 
 ## 🎨 Design Process: From Figma to Code
 
