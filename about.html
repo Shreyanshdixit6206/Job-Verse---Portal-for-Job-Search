@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - JobVerse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 text-slate-200 antialiased">
+
+    <!-- === HEADER === -->
+    <header id="header" class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 glass-card">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold text-white">
+                    <i class="fa-solid fa-rocket gradient-text"></i>
+                    <span>JobVerse</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-300 hover:text-white transition-colors duration-300">Home</a>
+                    <a href="jobs.html" class="text-slate-300 hover:text-white transition-colors duration-300">Jobs</a>
+                    <a href="about.html" class="text-white font-bold transition-colors duration-300">About</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-white transition-colors duration-300">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="login.html" class="text-slate-300 hover:text-white font-semibold transition-colors duration-300">Login</a>
+                    <a href="login.html#register" class="btn-primary">Register</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass-card mt-2">
+            <nav class="px-4 pt-2 pb-4 space-y-2">
+                 <a href="index.html" class="block text-center text-slate-300 py-2 hover:text-white transition-colors duration-300">Home</a>
+                <a href="jobs.html" class="block text-center text-slate-300 py-2 hover:text-white transition-colors duration-300">Jobs</a>
+                <a href="about.html" class="block text-center text-white font-bold py-2 transition-colors duration-300">About</a>
+                <a href="contact.html" class="block text-center text-slate-300 py-2 hover:text-white transition-colors duration-300">Contact</a>
+                <div class="flex justify-center items-center space-x-4 pt-4">
+                    <a href="login.html" class="text-slate-300 hover:text-white font-semibold transition-colors duration-300">Login</a>
+                    <a href="login.html#register" class="btn-primary">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- === MAIN CONTENT === -->
+    <main class="pt-32">
+        <!-- Title Section -->
+        <section class="text-center pb-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white">About <span class="gradient-text">JobVerse</span></h1>
+                <p class="mt-4 text-slate-400 max-w-2xl mx-auto">We're on a mission to connect talent with opportunity, one dream job at a time.</p>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section class="pb-16 md:pb-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="reveal">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Our Mission</h2>
+                        <p class="mt-4 text-slate-300 leading-relaxed">We started JobVerse to revolutionize the job search. We believe finding a fulfilling career should be an exciting adventure, not a chore. Our platform bridges the gap between passionate professionals and innovative companies, creating powerful connections that fuel success and build the future.</p>
+                        <a href="jobs.html" class="btn-primary mt-8 inline-block">Start Your Adventure</a>
+                    </div>
+                    <div class="reveal" style="transition-delay: 100ms;">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=1974&auto=format&fit=crop" class="rounded-2xl shadow-2xl shadow-purple-500/20 w-full h-auto" alt="Team working">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How it works -->
+        <section class="py-16 md:py-24 bg-slate-900/50">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12 reveal">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white">How It <span class="gradient-text">Works</span></h2>
+                    <p class="mt-2 text-slate-400 max-w-2xl mx-auto">A simple, streamlined process to get you from searching to hired.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="reveal">
+                        <div class="mx-auto w-24 h-24 flex items-center justify-center glass-card rounded-full text-4xl gradient-text"><i class="fa-solid fa-user-plus"></i></div>
+                        <h3 class="font-bold text-xl mt-6 text-white">Create Account</h3>
+                        <p class="text-slate-400 mt-2">Build your pro profile in minutes.</p>
+                    </div>
+                    <div class="reveal" style="transition-delay: 100ms;">
+                        <div class="mx-auto w-24 h-24 flex items-center justify-center glass-card rounded-full text-4xl gradient-text"><i class="fa-solid fa-cloud-upload-alt"></i></div>
+                        <h3 class="font-bold text-xl mt-6 text-white">Upload Resume</h3>
+                        <p class="text-slate-400 mt-2">Showcase your skills & experience.</p>
+                    </div>
+                    <div class="reveal" style="transition-delay: 200ms;">
+                        <div class="mx-auto w-24 h-24 flex items-center justify-center glass-card rounded-full text-4xl gradient-text"><i class="fa-solid fa-search"></i></div>
+                        <h3 class="font-bold text-xl mt-6 text-white">Find Jobs</h3>
+                        <p class="text-slate-400 mt-2">Search thousands of listings.</p>
+                    </div>
+                    <div class="reveal" style="transition-delay: 300ms;">
+                        <div class="mx-auto w-24 h-24 flex items-center justify-center glass-card rounded-full text-4xl gradient-text"><i class="fa-solid fa-check-double"></i></div>
+                        <h3 class="font-bold text-xl mt-6 text-white">Get Hired</h3>
+                        <p class="text-slate-400 mt-2">Apply and land your dream job.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="bg-slate-900/70 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold">
+                       <i class="fa-solid fa-rocket gradient-text"></i>
+                       <span class="text-white">JobVerse</span>
+                    </a>
+                    <p class="mt-4 text-slate-400">Your portal to the universe of career opportunities.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-slate-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="jobs.html" class="text-slate-400 hover:text-white transition-colors">Find Jobs</a></li>
+                        <li><a href="contact.html" class="text-slate-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Follow Us</h4>
+                    <div class="flex space-x-4">
+                       <a href="#" class="text-slate-400 hover:text-white transition-transform duration-300 hover:scale-125"><i class="fab fa-twitter text-xl"></i></a>
+                       <a href="#" class="text-slate-400 hover:text-white transition-transform duration-300 hover:scale-125"><i class="fab fa-instagram text-xl"></i></a>
+                       <a href="#" class="text-slate-400 hover:text-white transition-transform duration-300 hover:scale-125"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Stay Updated</h4>
+                    <p class="text-slate-400 mb-4">Get the latest job drops in your inbox.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Address" class="w-full bg-slate-800 border-slate-700 rounded-l-lg px-4 py-2 text-white placeholder-slate-400 focus:ring-2 focus:ring-primary focus:outline-none">
+                        <button type="submit" class="btn-primary rounded-l-none">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-slate-800 text-center">
+                <p class="text-slate-500">&copy; 2025 JobVerse. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

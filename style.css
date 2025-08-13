@@ -1,0 +1,87 @@
+/* --- CUSTOM STYLES FOR THE NEW DESIGN --- */
+:root {
+    --primary: #9a34ff; /* Vibrant Purple */
+    --secondary: #ff34a1; /* Bright Pink/Magenta */
+    --glass-bg: rgba(30, 41, 59, 0.5); /* bg-slate-800/50 */
+    --glass-border: rgba(51, 65, 85, 0.5); /* border-slate-700/50 */
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lexend', sans-serif;
+}
+
+/* --- Glassmorphism Effect --- */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    border-radius: 1.5rem; /* 24px */
+}
+
+/* --- Gradient Text --- */
+.gradient-text {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+/* --- Custom Button Style --- */
+.btn-primary {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem; /* 12px */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(154, 52, 255, 0.2);
+}
+.btn-primary:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255, 52, 161, 0.3);
+}
+
+/* --- Anime-style Animations --- */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* --- Animated Gradient Background for Hero --- */
+.animated-gradient-bg {
+    background: linear-gradient(
+        -45deg,
+        #0f172a, /* slate-900 */
+        #1e293b, /* slate-800 */
+        #334155, /* slate-700 */
+        #9a34ff  /* primary */
+    );
+    background-size: 400% 400%;
+    animation: gradient-animation 15s ease infinite;
+}
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Card Hover Effect */
+.job-card-re, .category-card-re {
+    transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), box-shadow 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: transform;
+}
+.job-card-re:hover, .category-card-re:hover {
+    transform: translateY(-10px) perspective(1000px) rotateX(2deg) rotateY(-2deg);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2), 0 0 40px var(--primary);
+}

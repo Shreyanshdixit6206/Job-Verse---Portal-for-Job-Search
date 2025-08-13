@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs - JobVerse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-900 text-slate-200 antialiased">
+
+    <!-- === HEADER === -->
+    <header id="header" class="fixed top-4 left-1/2 -translate-x-1/2 w-[95%] max-w-7xl z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 glass-card">
+            <div class="flex items-center justify-between h-20">
+                <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold text-white">
+                    <i class="fa-solid fa-rocket gradient-text"></i>
+                    <span>JobVerse</span>
+                </a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-slate-300 hover:text-white transition-colors duration-300">Home</a>
+                    <a href="jobs.html" class="text-white font-bold transition-colors duration-300">Jobs</a>
+                    <a href="about.html" class="text-slate-300 hover:text-white transition-colors duration-300">About</a>
+                    <a href="contact.html" class="text-slate-300 hover:text-white transition-colors duration-300">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="login.html" class="text-slate-300 hover:text-white font-semibold transition-colors duration-300">Login</a>
+                    <a href="login.html#register" class="btn-primary">Register</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-white focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden glass-card mt-2">
+            <nav class="px-4 pt-2 pb-4 space-y-2">
+                 <a href="index.html" class="block text-center text-slate-300 py-2 hover:text-white transition-colors duration-300">Home</a>
+                <a href="jobs.html" class="block text-center text-white font-bold py-2 transition-colors duration-300">Jobs</a>
+                <a href="about.html" class="block text-center text-slate-300 py-2 hover:text-white transition-colors duration-300">About</a>
+                <a href="contact.html" class="block text-center text-slate-300 py-2 hover:text-white transition-colors duration-300">Contact</a>
+                <div class="flex justify-center items-center space-x-4 pt-4">
+                    <a href="login.html" class="text-slate-300 hover:text-white font-semibold transition-colors duration-300">Login</a>
+                    <a href="login.html#register" class="btn-primary">Register</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- === MAIN CONTENT === -->
+    <main class="pt-32">
+        <!-- Title Section -->
+        <section class="text-center pb-16">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white">Find Your <span class="gradient-text">Perfect Role</span></h1>
+                <p class="mt-4 text-slate-400 max-w-2xl mx-auto">Search through thousands of listings from top companies.</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="pb-16 md:pb-24">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-4 gap-8">
+                    <!-- Filters Sidebar -->
+                    <aside class="lg:col-span-1">
+                        <div class="glass-card p-6 sticky top-28">
+                            <h3 class="text-xl font-bold mb-6 text-white">Filters</h3>
+                            <div class="space-y-6">
+                                <div>
+                                    <label for="job-title" class="font-semibold mb-2 block text-slate-300">Job Title</label>
+                                    <input type="text" id="job-title" placeholder="e.g., UI Designer" class="w-full bg-slate-800 border-slate-700 rounded-lg px-4 py-2 text-white placeholder-slate-400 focus:ring-2 focus:ring-purple-500 focus:outline-none">
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-2 text-slate-300">Job Type</h4>
+                                    <div class="space-y-2">
+                                        <label class="flex items-center text-slate-300"><input type="checkbox" class="rounded text-purple-500 bg-slate-700 border-slate-600 focus:ring-purple-500"> <span class="ml-2">Full Time</span></label>
+                                        <label class="flex items-center text-slate-300"><input type="checkbox" class="rounded text-purple-500 bg-slate-700 border-slate-600 focus:ring-purple-500"> <span class="ml-2">Part Time</span></label>
+                                        <label class="flex items-center text-slate-300"><input type="checkbox" class="rounded text-purple-500 bg-slate-700 border-slate-600 focus:ring-purple-500"> <span class="ml-2">Remote</span></label>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold mb-2 text-slate-300">Salary Range</h4>
+                                    <input type="range" min="0" max="200000" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-purple-500">
+                                    <p class="text-sm text-slate-400 mt-1">$0 - $200,000+</p>
+                                </div>
+                                <button class="w-full btn-primary py-3">Apply Filters</button>
+                            </div>
+                        </div>
+                    </aside>
+                    
+                    <!-- Job Listings -->
+                    <main class="lg:col-span-3">
+                        <div class="flex justify-between items-center mb-6">
+                            <p class="text-slate-400">Showing 1-6 of 6 results</p>
+                            <select class="bg-slate-800 border-slate-700 rounded-lg focus:ring-purple-500 focus:border-purple-500 text-white">
+                                <option>Sort by latest</option>
+                                <option>Sort by salary</option>
+                            </select>
+                        </div>
+                        <div id="all-jobs-container" class="grid md:grid-cols-2 gap-8">
+                            <!-- All job cards will be dynamically inserted here by script.js -->
+                        </div>
+                        <!-- Pagination -->
+                        <div class="mt-12 flex justify-center items-center space-x-2">
+                            <a href="#" class="px-4 py-2 rounded-lg bg-purple-500 text-white font-semibold">1</a>
+                            <a href="#" class="px-4 py-2 rounded-lg glass-card hover:bg-slate-700 text-slate-300 font-semibold transition-colors">2</a>
+                            <a href="#" class="px-4 py-2 rounded-lg glass-card hover:bg-slate-700 text-slate-300 font-semibold transition-colors">3</a>
+                            <a href="#" class="px-4 py-2 rounded-lg glass-card hover:bg-slate-700 text-slate-300 font-semibold transition-colors">Next <i class="fa-solid fa-arrow-right ml-1"></i></a>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer class="bg-slate-900/70 border-t border-slate-800">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div class="lg:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold">
+                       <i class="fa-solid fa-rocket gradient-text"></i>
+                       <span class="text-white">JobVerse</span>
+                    </a>
+                    <p class="mt-4 text-slate-400">Your portal to the universe of career opportunities.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="about.html" class="text-slate-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="jobs.html" class="text-slate-400 hover:text-white transition-colors">Find Jobs</a></li>
+                        <li><a href="contact.html" class="text-slate-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Follow Us</h4>
+                    <div class="flex space-x-4">
+                       <a href="#" class="text-slate-400 hover:text-white transition-transform duration-300 hover:scale-125"><i class="fab fa-twitter text-xl"></i></a>
+                       <a href="#" class="text-slate-400 hover:text-white transition-transform duration-300 hover:scale-125"><i class="fab fa-instagram text-xl"></i></a>
+                       <a href="#" class="text-slate-400 hover:text-white transition-transform duration-300 hover:scale-125"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 text-white">Stay Updated</h4>
+                    <p class="text-slate-400 mb-4">Get the latest job drops in your inbox.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email Address" class="w-full bg-slate-800 border-slate-700 rounded-l-lg px-4 py-2 text-white placeholder-slate-400 focus:ring-2 focus:ring-primary focus:outline-none">
+                        <button type="submit" class="btn-primary rounded-l-none">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="mt-12 pt-8 border-t border-slate-800 text-center">
+                <p class="text-slate-500">&copy; 2025 JobVerse. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
