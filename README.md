@@ -1,10 +1,6 @@
 # JobVerse - Modern Job Portal
 
 <p align="center">
-  <img src="(https://github.com/Shreyanshdixit6206/JobVerse---Modern-Job-Portal/blob/main/Screenshot%202025-08-14%20015243.png)" alt="JobVerse Banner">
-</p>
-
-<p align="center">
   A fully responsive, multi-page job portal website featuring a futuristic, anime-inspired dark theme. This project showcases a modern front-end design using glassmorphism, gradient effects, and fluid animations.
 </p>
 
