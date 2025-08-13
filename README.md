@@ -29,19 +29,6 @@ This design-first approach ensured a cohesive and polished user experience acros
 
 ➡️ [**Check out the original Figma design file here!**](https://www.figma.com/your-design-file-link) *(Replace with your Figma link)*
 
-## 📸 Screenshots
-
-*(It's highly recommended to replace these placeholders with actual screenshots of your project!)*
-
-| Home Page | Jobs Page |
-| :---: | :---: |
-| <img src="https://placehold.co/400x300/1a1a2e/ff34a1?text=Home+Page" alt="Home Page Screenshot"> | <img src="https://placehold.co/400x300/1a1a2e/ff34a1?text=Jobs+Page" alt="Jobs Page Screenshot"> |
-
-| Job Details | Login Page |
-| :---: | :---: |
-| <img src="https://placehold.co/400x300/1a1a2e/ff34a1?text=Job+Details" alt="Job Details Screenshot"> | <img src="https://placehold.co/400x300/1a1a2e/ff34a1?text=Login+Page" alt="Login Page Screenshot"> |
-
-
 ## 🚀 Features
 
 * **Fully Responsive Design:** Looks great on all devices, from mobile phones to desktops.
